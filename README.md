@@ -1,6 +1,6 @@
 # files
 
-files is a file manager for Linux desktops, built on the [quire](https://github.com/PoHsuanLai/quire)
+files is a file manager for Linux desktops, built on the [quire](https://github.com/Bardo-DE/quire)
 design system. It follows the Mac's Finder: a sidebar of places, list and icon views (with thumbnails), tabs,
 Quick Look on Space, a preview pane (Shift+Command+P), undo for every change, and the freedesktop.org standards that make it the
 desktop's file manager (the `org.freedesktop.FileManager1` service, the Trash, `mimeapps.list`).

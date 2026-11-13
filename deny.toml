@@ -58,40 +58,40 @@ allow-registry = ["https://github.com/rust-lang/crates.io-index"]
 # manifest's revs), our forks, mpv-wgpu, and
 # taffy (reached through blitz).
 allow-git = [
-    "https://github.com/PoHsuanLai/anyrender",
+    "https://github.com/Bardo-DE/anyrender",
     # The viewer's preview, thumbnail and file-kind crates (Quick Look, the icon view). MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/anyview",
-    "https://github.com/PoHsuanLai/blitz",
-    "https://github.com/PoHsuanLai/blitz-kit",
+    "https://github.com/Bardo-DE/anyview",
+    "https://github.com/Bardo-DE/blitz",
+    "https://github.com/Bardo-DE/blitz-kit",
     # The desktop's portable keymap (quire v0.3.14 resolves keys to actions with it, and anyview-core
     # declares the viewer's own default chords): one rev, quire's. MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/chordkit",
+    "https://github.com/Bardo-DE/chordkit",
     # dioxus-core 0.7.10 with the dirty-task fix backported (quire's [patch], v0.2.15+).
-    "https://github.com/PoHsuanLai/dioxus",
+    "https://github.com/Bardo-DE/dioxus",
     # Single instance without D-Bus (anyview-platform): MIT OR Apache-2.0, one rev in Cargo.toml.
-    "https://github.com/PoHsuanLai/latchkey",
-    "https://github.com/PoHsuanLai/quire",
+    "https://github.com/Bardo-DE/latchkey",
+    "https://github.com/Bardo-DE/quire",
     # The plugin library (the wire, the manifest envelope, discovery and the process handling): one
     # rev in Cargo.toml. MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/bayonet",
-    "https://github.com/PoHsuanLai/mpv-wgpu",
-    "https://github.com/PoHsuanLai/vello",
+    "https://github.com/Bardo-DE/bayonet",
+    "https://github.com/Bardo-DE/mpv-wgpu",
+    "https://github.com/Bardo-DE/vello",
     # The desktop's agent layer (anyview-platform, quire-desktop): docket at the manifest's rev, and
     # porter, almanac and stoker at the revs docket pins, and peephole (porter-dbus's caller check,
     # at the tag porter pins). All MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/docket",
-    "https://github.com/PoHsuanLai/porter",
-    "https://github.com/PoHsuanLai/almanac",
-    "https://github.com/PoHsuanLai/stoker",
-    "https://github.com/PoHsuanLai/peephole",
+    "https://github.com/Bardo-DE/docket",
+    "https://github.com/Bardo-DE/porter",
+    "https://github.com/Bardo-DE/almanac",
+    "https://github.com/Bardo-DE/stoker",
+    "https://github.com/Bardo-DE/peephole",
     # syncd's bus vocabulary and its test fake (files-desktop, Storage1): ferry at the rev that pins
     # the same porter. MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/ferry",
+    "https://github.com/Bardo-DE/ferry",
     # The AI crates docket pins (steward) and the provenance types (prov), at the revs docket pins.
     # MIT OR Apache-2.0.
-    "https://github.com/PoHsuanLai/steward",
-    "https://github.com/PoHsuanLai/prov",
+    "https://github.com/Bardo-DE/steward",
+    "https://github.com/Bardo-DE/prov",
     # docket's sandbox wrapper (docket ff9d1b73 and later): MIT OR Apache-2.0, at the rev docket pins.
-    "https://github.com/PoHsuanLai/bulkhead",
+    "https://github.com/Bardo-DE/bulkhead",
     "https://github.com/DioxusLabs/taffy",
 ]

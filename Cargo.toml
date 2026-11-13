@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 rust-version = "1.92"
-repository = "https://github.com/PoHsuanLai/files"
+repository = "https://github.com/Bardo-DE/files"
 publish = false
 
 # The layer table in scripts/check-boundary.sh says which of these may name which.
@@ -20,22 +20,22 @@ files-ops = { path = "crates/files-ops" }
 files-desktop = { path = "crates/files-desktop" }
 files-ui = { path = "crates/files-ui" }
 # quire, pinned the desktop-wide way (.git + full rev; the tag is a comment), as temor and anyview do.
-ds = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
-ds-blitz = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
-ds-settings = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
-ds-harness = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
-ds-extensions = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
-ds-lint = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds-blitz = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds-settings = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds-harness = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds-extensions = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
+ds-lint = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }  # e19728b7: v0.3.58
 # The desktop's portable keymap core (actions, chords, Primary per platform); files owns no keymap.
-chordkit = { git = "https://github.com/PoHsuanLai/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit = { git = "https://github.com/Bardo-DE/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
 # anyview, the desktop's viewer: Quick Look is its light tier, `anyview-peek`'s worker and card, hosted as
 # mailo hosts them (headless otherwise: no media player, no D-Bus). The rev is anyview's main, which names
 # the quire rev above. `anyview-core` is the vocabulary (`FilePath`), `anyview-fs` opens a path as an input.
-anyview-core = { git = "https://github.com/PoHsuanLai/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
-anyview-fs = { git = "https://github.com/PoHsuanLai/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
-anyview-image = { git = "https://github.com/PoHsuanLai/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
-anyview-platform = { git = "https://github.com/PoHsuanLai/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
-anyview-peek = { git = "https://github.com/PoHsuanLai/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d", default-features = false }  # 3d5c3a45 (quire v0.3.58)
+anyview-core = { git = "https://github.com/Bardo-DE/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
+anyview-fs = { git = "https://github.com/Bardo-DE/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
+anyview-image = { git = "https://github.com/Bardo-DE/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
+anyview-platform = { git = "https://github.com/Bardo-DE/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d" }  # 3d5c3a45 (quire v0.3.58)
+anyview-peek = { git = "https://github.com/Bardo-DE/anyview.git", rev = "3d5c3a453a866791fe691ed8fdc72a57fa62383d", default-features = false }  # 3d5c3a45 (quire v0.3.58)
 # Copied from quire/docs/workspace-deps.toml at the rev above.
 dioxus = { version = "0.7", default-features = false, features = ["macro", "html", "hooks", "signals"] }
 # Dates in the list view, in the person's own time zone.
@@ -50,27 +50,27 @@ zbus = { version = "5.19", default-features = false, features = ["tokio"] }
 # f406782b and prov 03c855eb (spelt without .git), the ones pinned here, and ferry e61b264 locks
 # the same porter, so one of each is locked. docket-provider's `dbus` feature serves the provider: no router, no cedar. No [patch]
 # is needed.
-docket-provider = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c", features = ["dbus"] }
-docket-core = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
-docket-manifest = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
-docket-vocab = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
-docket-wire = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
+docket-provider = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c", features = ["dbus"] }
+docket-core = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
+docket-manifest = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
+docket-vocab = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
+docket-wire = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
 # Who may call Files' provider (intentd's unit), and the stand-in a test names for it.
-docket-dbus = { git = "https://github.com/PoHsuanLai/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
-prov = { git = "https://github.com/PoHsuanLai/prov", rev = "03c855eb4c80779522cf712075dead4a761adc4f" }
-porter-core = { git = "https://github.com/PoHsuanLai/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
-porter-ids      = { git = "https://github.com/PoHsuanLai/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+docket-dbus = { git = "https://github.com/Bardo-DE/docket.git", rev = "fe272208251a7aa9528df5ebc347f3a8498aec9c" }
+prov = { git = "https://github.com/Bardo-DE/prov", rev = "03c855eb4c80779522cf712075dead4a761adc4f" }
+porter-core = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-ids      = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
 # The rows the cloud drives carry (`Details`, files-desktop only): the same porter rev as above.
-porter-dbus = { git = "https://github.com/PoHsuanLai/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-dbus = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
 # org.quire.Storage1, the cloud drives (files-desktop only): syncd's bus vocabulary, in ferry.
-ferry-bus = { git = "https://github.com/PoHsuanLai/ferry", rev = "e61b2648d8c455b6b36612aece7f51a6dd5ff96c" }
+ferry-bus = { git = "https://github.com/Bardo-DE/ferry", rev = "e61b2648d8c455b6b36612aece7f51a6dd5ff96c" }
 # TEST TOOLING (files-desktop dev-dependency only): syncd's fake Storage1, served on a private bus.
-syncd-fakes = { git = "https://github.com/PoHsuanLai/ferry", rev = "e61b2648d8c455b6b36612aece7f51a6dd5ff96c" }
+syncd-fakes = { git = "https://github.com/Bardo-DE/ferry", rev = "e61b2648d8c455b6b36612aece7f51a6dd5ff96c" }
 # The tests of files-desktop write the calls the router sends as JSON.
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 # Desktop entries and the file-type database (`ds_helpers::mime`), UI-free without its default feature.
-ds-helpers = { git = "https://github.com/PoHsuanLai/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9", default-features = false }  # 8760244b (v0.3.57)
+ds-helpers = { git = "https://github.com/Bardo-DE/quire.git", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9", default-features = false }  # 8760244b (v0.3.57)
 tempfile = "3"
 # The binary finds an app's icon file in the person's icon theme (detent's version). MIT.
 freedesktop-icons = "0.4"
@@ -106,28 +106,110 @@ codegen-units = 1
 strip = "debuginfo"
 
 # Patches apply only at a workspace root, so this root repeats quire's block verbatim.
-# vello and anyrender come from our forks (github.com/PoHsuanLai/vello and /anyrender, branch
+# vello and anyrender come from our forks (github.com/Bardo-DE/vello and /anyrender, branch
 # quire-filters): the colour matrix filter, multi-threaded filter layers and CSS filter lists, so
 # every CSS `filter` function paints on both backends. Move back to crates.io once upstream has
 # them (blitz-kit docs/blitz-gaps.md tracks the PRs).
 [patch.crates-io]
-vello_common = { git = "https://github.com/PoHsuanLai/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
-vello_cpu = { git = "https://github.com/PoHsuanLai/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
-vello_hybrid = { git = "https://github.com/PoHsuanLai/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
-vello_sparse_shaders = { git = "https://github.com/PoHsuanLai/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
-glifo = { git = "https://github.com/PoHsuanLai/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
-anyrender = { git = "https://github.com/PoHsuanLai/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
-anyrender_vello_cpu = { git = "https://github.com/PoHsuanLai/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
-anyrender_vello_hybrid = { git = "https://github.com/PoHsuanLai/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
-wgpu_context = { git = "https://github.com/PoHsuanLai/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
-pixels_window_renderer = { git = "https://github.com/PoHsuanLai/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
+vello_common = { git = "https://github.com/Bardo-DE/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
+vello_cpu = { git = "https://github.com/Bardo-DE/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
+vello_hybrid = { git = "https://github.com/Bardo-DE/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
+vello_sparse_shaders = { git = "https://github.com/Bardo-DE/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
+glifo = { git = "https://github.com/Bardo-DE/vello", rev = "5c986661c9e943d26dac8e8ea7812895947722b8" }
+anyrender = { git = "https://github.com/Bardo-DE/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
+anyrender_vello_cpu = { git = "https://github.com/Bardo-DE/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
+anyrender_vello_hybrid = { git = "https://github.com/Bardo-DE/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
+wgpu_context = { git = "https://github.com/Bardo-DE/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
+pixels_window_renderer = { git = "https://github.com/Bardo-DE/anyrender", rev = "03fcbe4c746d2334d3fb91e63641741f3dacc826" }
 # dioxus-core 0.7.10 can spin forever in VirtualDom::wait_for_work: a task woken and then cancelled
 # before it is polled (a use_resource restart) leaves an empty entry in the dirty-task queue that
 # pop_task never removes. Fixed upstream in DioxusLabs/dioxus#5554 (0.8-alpha only); this fork
-# (github.com/PoHsuanLai/dioxus, branch quire-0.7) backports it onto 0.7.10. Remove when quire
+# (github.com/Bardo-DE/dioxus, branch quire-0.7) backports it onto 0.7.10. Remove when quire
 # moves to dioxus 0.8.
-dioxus-core = { git = "https://github.com/PoHsuanLai/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
-dioxus-core-types = { git = "https://github.com/PoHsuanLai/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
-generational-box = { git = "https://github.com/PoHsuanLai/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
-subsecond = { git = "https://github.com/PoHsuanLai/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
-subsecond-types = { git = "https://github.com/PoHsuanLai/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+dioxus-core = { git = "https://github.com/Bardo-DE/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+dioxus-core-types = { git = "https://github.com/Bardo-DE/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+generational-box = { git = "https://github.com/Bardo-DE/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+subsecond = { git = "https://github.com/Bardo-DE/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+subsecond-types = { git = "https://github.com/Bardo-DE/dioxus", rev = "a615fd9f09e272c688a45e366161c576cecf0439" }
+
+# Pinned dependencies still name these moved repos by their old PoHsuanLai URLs. The patches read
+# them at the same revs from github.com/Bardo-DE, so each crate has one source and nothing is
+# fetched through the old URLs. Delete a block when no pinned rev names that URL any more.
+[patch."https://github.com/PoHsuanLai/almanac"]
+almanac-core = { git = "https://github.com/Bardo-DE/almanac", rev = "c1bbec7e5a9cbf22122abd31ca8630871dbbfbb3" }
+
+[patch."https://github.com/PoHsuanLai/bayonet"]
+bayonet = { git = "https://github.com/Bardo-DE/bayonet", rev = "d66e243188033c1b7c74e636cb5f548f75caecb8" }
+
+[patch."https://github.com/PoHsuanLai/blitz"]
+accesskit_xplat = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+blitz-dom = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+blitz-html = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+blitz-paint = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+blitz-shell = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+blitz-traits = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+debug_timer = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+dioxus-native = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+dioxus-native-dom = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+stylo_taffy = { git = "https://github.com/Bardo-DE/blitz", rev = "841386a71f17673c211217725e75068774517ba8" }
+
+[patch."https://github.com/PoHsuanLai/blitz-kit"]
+blitz-kit = { git = "https://github.com/Bardo-DE/blitz-kit", rev = "fd08b468b8b5f7256c132240e96de35d2fea1433" }
+
+[patch."https://github.com/PoHsuanLai/bulkhead"]
+bulkhead = { git = "https://github.com/Bardo-DE/bulkhead", rev = "fe1087903357e7cb99152caa5ef8e9dff4e1be7f" }
+
+[patch."https://github.com/PoHsuanLai/chordkit"]
+chordkit = { git = "https://github.com/Bardo-DE/chordkit", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit-file = { git = "https://github.com/Bardo-DE/chordkit", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit-gnome = { git = "https://github.com/Bardo-DE/chordkit", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit-kde = { git = "https://github.com/Bardo-DE/chordkit", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+
+[patch."https://github.com/PoHsuanLai/latchkey"]
+latchkey = { git = "https://github.com/Bardo-DE/latchkey", rev = "b10ae1b8c49c55cce2c5affde8f5db76edb66ab4" }
+
+[patch."https://github.com/PoHsuanLai/peephole"]
+peephole-bus = { git = "https://github.com/Bardo-DE/peephole", tag = "v0.1.11" }
+peephole-core = { git = "https://github.com/Bardo-DE/peephole", tag = "v0.1.11" }
+peephole = { git = "https://github.com/Bardo-DE/peephole", tag = "v0.1.11" }
+
+[patch."https://github.com/PoHsuanLai/porter"]
+porter-callers = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-capability = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-core = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-dbus-macros = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-dbus = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-ids = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-match = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-tailscale = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+porter-wire = { git = "https://github.com/Bardo-DE/porter", rev = "f406782b90b67f62f0f14ec5e78aec8992b5d709" }
+
+[patch."https://github.com/PoHsuanLai/prov"]
+prov = { git = "https://github.com/Bardo-DE/prov", rev = "03c855eb4c80779522cf712075dead4a761adc4f" }
+
+[patch."https://github.com/PoHsuanLai/quire"]
+ds-blitz = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-core-derive = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-core = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-desktop = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-extensions = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-helpers = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-intents = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-motion = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-peer = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-settings-derive = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-settings = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+ds-style = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+quire-emoji = { git = "https://github.com/Bardo-DE/quire", rev = "e19728b7ee9e369d360c646bf5e7ed559bc3d6f9" }
+
+[patch."https://github.com/PoHsuanLai/steward"]
+porter-infer = { git = "https://github.com/Bardo-DE/steward", rev = "baedbb000103c7dcc3c73d5f2871c7a1e9dfd33e" }
+steward-dbus = { git = "https://github.com/Bardo-DE/steward", rev = "baedbb000103c7dcc3c73d5f2871c7a1e9dfd33e" }
+
+[patch."https://github.com/PoHsuanLai/stoker"]
+cua-action = { git = "https://github.com/Bardo-DE/stoker", rev = "98621a2f3730ea1c3e0b8abce00f8e4fe91fe7d7" }
+genai-names = { git = "https://github.com/Bardo-DE/stoker", rev = "98621a2f3730ea1c3e0b8abce00f8e4fe91fe7d7" }
+model-provider = { git = "https://github.com/Bardo-DE/stoker", rev = "98621a2f3730ea1c3e0b8abce00f8e4fe91fe7d7" }
+vision-prep = { git = "https://github.com/Bardo-DE/stoker", rev = "98621a2f3730ea1c3e0b8abce00f8e4fe91fe7d7" }
+
